@@ -20,6 +20,17 @@
     </div>
   </header>
 
+  <!-- City selection section -->
+  <section class="city-select">
+    <h2>Where are you starting your weekend escape from?</h2>
+    <div class="city-buttons">
+      <button onclick="selectCity('Dubai')">Dubai</button>
+      <button onclick="selectCity('Sharjah')">Sharjah</button>
+      <button onclick="selectCity('Abu Dhabi')">Abu Dhabi</button>
+    </div>
+    <p id="response"></p>
+  </section>
+
   <main>
     <section class="destinations">
       <h2>Destinations</h2>
@@ -53,6 +64,13 @@
   <footer>
     <p>&copy; 2025 Weekend Destinations · Explore. Get Inspired. Escape.</p>
   </footer>
+
+  <script>
+    function selectCity(city) {
+      document.getElementById("response").textContent =
+        `Awesome! Getaways from ${city} coming soon...`;
+    }
+  </script>
 
 </body>
 </html>
