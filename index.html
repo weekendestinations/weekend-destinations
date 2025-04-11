@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Weekend Destinations</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Imagen grande como cabecera visual -->
-  <header class="hero-header">
-    <img src="homepage-header.png" alt="Weekend Destinations Header">
+  <!-- Hero section with background video and text -->
+  <header class="hero-banner">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="header-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay">
+      <h1>weekend destinations.</h1>
+      <p>travel inspiration for busy people</p>
+    </div>
   </header>
 
   <main>
@@ -46,5 +53,6 @@
   <footer>
     <p>&copy; 2025 Weekend Destinations · Explore. Get Inspired. Escape.</p>
   </footer>
+
 </body>
 </html>

@@ -1,5 +1,3 @@
-/* Clean style with visual homepage header */
-
 body {
   margin: 0;
   font-family: 'Times New Roman', serif;
@@ -7,11 +5,41 @@ body {
   color: #333333;
 }
 
-.hero-header img {
+.hero-banner {
+  position: relative;
   width: 100%;
-  max-height: 600px;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  display: block;
+  z-index: 0;
+}
+
+.hero-banner .overlay {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.hero-banner .overlay h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: normal;
+}
+
+.hero-banner .overlay p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
 
 main {
