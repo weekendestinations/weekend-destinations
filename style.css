@@ -33,19 +33,19 @@ body {
   font-size: 2.5rem;
   margin: 0;
   font-weight: 600;
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
 .hero-banner .overlay p {
   font-size: 1.1rem;
   margin-top: 0.5rem;
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
 .city-select {
   text-align: center;
   margin: 3rem 0;
 }
 .city-select h2 {
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
 .city-buttons {
   display: flex;
@@ -54,7 +54,11 @@ body {
   flex-wrap: wrap;
   margin-top: 1rem;
 }
-.city-buttons button {
+.city-buttons .btn, .alt-city-select .btn {
+  padding: 1.2rem 2.5rem;
+  font-size: 1.3rem;
+  border-radius: 12px;
+  text-transform: capitalize;
   background-color: #6b705c;
   color: white;
   border: none;
@@ -64,9 +68,9 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-family: 'Playfair Display', serif;
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
-.city-buttons button:hover {
+.city-buttons .btn:hover, .alt-city-select .btn:hover {
   background-color: #5a5d4c;
 }
 .alt-city-select {
@@ -75,7 +79,7 @@ body {
 .alt-city-select label {
   display: block;
   margin-bottom: 0.5rem;
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
 .alt-city-select select,
 .alt-city-select input {
@@ -85,14 +89,14 @@ body {
   border: 1px solid #aaa;
   border-radius: 6px;
   margin: 0.2rem;
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
 #response {
   margin-top: 1rem;
   color: #333;
   font-style: italic;
   font-size: 1rem;
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
 main {
   padding: 2rem;
@@ -102,7 +106,7 @@ h2 {
   color: #4b5320;
   margin-bottom: 1rem;
   text-align: center;
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
 .cards {
   display: flex;
@@ -129,13 +133,13 @@ h2 {
 .card h3 {
   margin: 1rem;
   font-size: 1.3rem;
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
 .card p {
   margin: 0 1rem 1rem;
   font-size: 0.95rem;
   color: #555;
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
 .btn.earthy-btn {
   background-color: #a68a64;
@@ -147,7 +151,7 @@ h2 {
   font-weight: 600;
   border-radius: 0 0 8px 8px;
   transition: background-color 0.3s;
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
 .btn.earthy-btn:hover {
   background-color: #8b7151;
@@ -159,7 +163,7 @@ h2 {
 }
 .activities h2,
 .activities p {
-  text-transform: lowercase;
+  text-transform: capitalize;
   color: #4b4b4b;
 }
 footer {
@@ -170,5 +174,5 @@ footer {
   font-size: 0.9rem;
   border-top: 1px solid #eaeaea;
   margin-top: 2rem;
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
