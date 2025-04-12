@@ -54,7 +54,7 @@ body {
   flex-wrap: wrap;
   margin-top: 1rem;
 }
-.city-buttons .btn, .alt-city-select .btn {
+.city-buttons button {
   background-color: #6b705c;
   color: white;
   border: none;
@@ -66,7 +66,7 @@ body {
   font-family: 'Playfair Display', serif;
   text-transform: lowercase;
 }
-.city-buttons .btn:hover, .alt-city-select .btn:hover {
+.city-buttons button:hover {
   background-color: #5a5d4c;
 }
 .alt-city-select {
