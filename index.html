@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Weekend Destinations</title>
+  <title>weekend destinations</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -12,7 +12,7 @@
   <header class="hero-banner">
     <video autoplay muted loop playsinline class="bg-video">
       <source src="header-video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
+      your browser does not support the video tag.
     </video>
     <div class="overlay">
       <h1>weekend destinations.</h1>
@@ -21,43 +21,60 @@
   </header>
 
   <section class="city-select">
-    <h2>Where are you starting your weekend escape from?</h2>
+    <h2>where are you starting your weekend escape from?</h2>
     <div class="city-buttons">
-      <button onclick="selectCity('Dubai')">Dubai</button>
-      <button onclick="selectCity('Sharjah')">Sharjah</button>
-      <button onclick="selectCity('Abu Dhabi')">Abu Dhabi</button>
+      <button onclick="selectCity('dubai')">dubai</button>
+      <button onclick="selectCity('sharjah')">sharjah</button>
+      <button onclick="selectCity('abu dhabi')">abu dhabi</button>
     </div>
     <p id="response"></p>
+
+    <div class="alt-city-select">
+      <label for="country">if you’re not in the uae, select your country and city:</label>
+      <select id="country">
+        <option value="">select country</option>
+        <option value="saudi arabia">saudi arabia</option>
+        <option value="qatar">qatar</option>
+        <option value="oman">oman</option>
+        <option value="kuwait">kuwait</option>
+      </select>
+      <input type="text" id="other-city" placeholder="your city..." />
+    </div>
   </section>
 
   <main>
     <section class="destinations">
-      <h2>Destinations</h2>
+      <h2>destinations.</h2>
       <div class="cards">
         <div class="card">
-          <img src="https://source.unsplash.com/featured/?desert" alt="Desert Escape">
-          <h3>Desert Safari</h3>
-          <p>From Dubai · Starting at 180 AED</p>
-          <a href="#" class="btn">Explore</a>
+          <img src="https://source.unsplash.com/featured/?desert" alt="desert escape">
+          <h3>desert safari</h3>
+          <p>from dubai · starting at 180 aed</p>
+          <a href="#" class="btn earthy-btn">explore</a>
         </div>
         <div class="card">
-          <img src="https://source.unsplash.com/featured/?mountains" alt="Mountain Escape">
-          <h3>Hatta Mountains</h3>
-          <p>From Sharjah · Starting at 250 AED</p>
-          <a href="#" class="btn">Explore</a>
+          <img src="https://source.unsplash.com/featured/?mountains" alt="mountain escape">
+          <h3>hatta mountains</h3>
+          <p>from sharjah · starting at 250 aed</p>
+          <a href="#" class="btn earthy-btn">explore</a>
         </div>
       </div>
+    </section>
+
+    <section class="activities">
+      <h2>activities.</h2>
+      <p>curated experiences and local ideas coming soon.</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Weekend Destinations · Explore. Get Inspired. Escape.</p>
+    <p>&copy; 2025 weekend destinations · explore. get inspired. escape.</p>
   </footer>
 
   <script>
     function selectCity(city) {
       document.getElementById("response").textContent =
-        `Awesome! Getaways from ${city} coming soon...`;
+        `awesome! getaways from ${city} coming soon...`;
     }
   </script>
 
